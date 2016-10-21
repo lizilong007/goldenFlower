@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" >
+	<title>Node.js+Socket.io</title>
+	<link rel="stylesheet" href="/css/zhajinhua.css">
+</head>
+<body>
+	<section class="other">
+		<!-- 使用flex布局更方便 -->
+	</section>
+	<div class="total">
+		<!-- 显示总的牌局的赌注的地方 -->
+		<div id="zongdujin">总金币：0</div>
+		<div id="duzhu">单次金币数：2</div>
+		<div id="state"></div>
+	</div>
+	<section class="brand">
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="commondPanel">
+			<button id="giveUp">弃牌</button>
+			<button id="goOn">跟上</button>
+			<button id="double">加倍</button>
+			<button id="compare">看牌</button>
+		</div>
+		<div class="money">金币剩余数：2000</div>
+	</section>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/licensing.js"></script>
+<script src="/js/action.js"></script>
+<script src="./js/events.js"></script>
+</html>
